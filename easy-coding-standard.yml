@@ -9,8 +9,8 @@ services:
 
     # helper services ↓
     PhpCsFixer\Tokenizer\Analyzer\FunctionsAnalyzer: ~
-    Shopsys\CodingStandards\Helper\PhpToDocTypeTransformer: ~
-    Shopsys\CodingStandards\Helper\FqnNameResolver: ~
+    Nwt\CodingStandards\Helper\PhpToDocTypeTransformer: ~
+    Nwt\CodingStandards\Helper\FqnNameResolver: ~
     PhpCsFixer\Tokenizer\Analyzer\NamespaceUsesAnalyzer: ~
     Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\IndentDetector: ~
 
@@ -20,27 +20,27 @@ services:
     SlevomatCodingStandard\Sniffs\TypeHints\NullableTypeForNullDefaultValueSniff: ~
     SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSpacingSniff: ~
 
-    # Shopsys Checkers
-    Shopsys\CodingStandards\CsFixer\ForbiddenDumpFixer: ~
-    Shopsys\CodingStandards\CsFixer\MissingButtonTypeFixer: ~
-    Shopsys\CodingStandards\CsFixer\OrmJoinColumnRequireNullableFixer: ~
-    Shopsys\CodingStandards\CsFixer\RedundantMarkDownTrailingSpacesFixer: ~
-    Shopsys\CodingStandards\Finder\FileFinder: ~
-    Shopsys\CodingStandards\Sniffs\ObjectIsCreatedByFactorySniff: ~
-    Shopsys\CodingStandards\Sniffs\ForbiddenDumpSniff: ~
-    Shopsys\CodingStandards\Sniffs\ForbiddenExitSniff: ~
-    Shopsys\CodingStandards\Sniffs\ForbiddenSuperGlobalSniff: ~
-    Shopsys\CodingStandards\Sniffs\ForbiddenDoctrineInheritanceSniff: ~
-    Shopsys\CodingStandards\Sniffs\ForbiddenDoctrineDefaultValueSniff: ~
+    # Nwt Checkers
+    Nwt\CodingStandards\CsFixer\ForbiddenDumpFixer: ~
+    Nwt\CodingStandards\CsFixer\MissingButtonTypeFixer: ~
+    Nwt\CodingStandards\CsFixer\OrmJoinColumnRequireNullableFixer: ~
+    Nwt\CodingStandards\CsFixer\RedundantMarkDownTrailingSpacesFixer: ~
+    Nwt\CodingStandards\Finder\FileFinder: ~
+    Nwt\CodingStandards\Sniffs\ObjectIsCreatedByFactorySniff: ~
+    Nwt\CodingStandards\Sniffs\ForbiddenDumpSniff: ~
+    Nwt\CodingStandards\Sniffs\ForbiddenExitSniff: ~
+    Nwt\CodingStandards\Sniffs\ForbiddenSuperGlobalSniff: ~
+    Nwt\CodingStandards\Sniffs\ForbiddenDoctrineInheritanceSniff: ~
+    Nwt\CodingStandards\Sniffs\ForbiddenDoctrineDefaultValueSniff: ~
     # method arguments and variables should be $camelCase
-    Shopsys\CodingStandards\Sniffs\ValidVariableNameSniff: ~
+    Nwt\CodingStandards\Sniffs\ValidVariableNameSniff: ~
     # add all @param, @return and @var annotations, in FQN
-    Shopsys\CodingStandards\CsFixer\Phpdoc\MissingParamAnnotationsFixer: ~
-    Shopsys\CodingStandards\CsFixer\Phpdoc\MissingReturnAnnotationFixer: ~
-    Shopsys\CodingStandards\CsFixer\Phpdoc\OrderedParamAnnotationsFixer: ~
+    Nwt\CodingStandards\CsFixer\Phpdoc\MissingParamAnnotationsFixer: ~
+    Nwt\CodingStandards\CsFixer\Phpdoc\MissingReturnAnnotationFixer: ~
+    Nwt\CodingStandards\CsFixer\Phpdoc\OrderedParamAnnotationsFixer: ~
     SlevomatCodingStandard\Sniffs\Namespaces\FullyQualifiedClassNameInAnnotationSniff: ~
 
-    # Custom Shopsys standards
+    # Custom Nwt standards
     PHP_CodeSniffer\Standards\Generic\Sniffs\CodeAnalysis\EmptyStatementSniff: ~
     PHP_CodeSniffer\Standards\Generic\Sniffs\CodeAnalysis\ForLoopShouldBeWhileLoopSniff: ~
     PHP_CodeSniffer\Standards\Generic\Sniffs\CodeAnalysis\ForLoopWithTestFunctionCallSniff: ~
@@ -147,11 +147,11 @@ services:
             - 'method'
 
     # Code Metrics
-    ObjectCalisthenics\Sniffs\Files\ClassTraitAndInterfaceLengthSniff:
+    Nwt\CodingStandards\Sniffs\ClassTraitAndInterfaceLengthSniff:
         maxLength: 550
-    ObjectCalisthenics\Sniffs\Files\FunctionLengthSniff:
+    Nwt\CodingStandards\Sniffs\FunctionLengthSniff:
         maxLength: 60
-    ObjectCalisthenics\Sniffs\Metrics\PropertyPerClassLimitSniff:
+    Nwt\CodingStandards\Sniffs\PropertyPerClassLimitSniff:
         maxCount: 30
 
 parameters:
