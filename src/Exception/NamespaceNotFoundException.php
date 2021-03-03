@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\Exception;
+namespace Nwt\CodingStandards\Exception;
 
 use RuntimeException;
 

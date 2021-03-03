@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer\Phpdoc;
+namespace Nwt\CodingStandards\CsFixer\Phpdoc;
 
 use Nette\Utils\Strings;
 use PhpCsFixer\DocBlock\Line;

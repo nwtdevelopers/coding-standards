@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer\Phpdoc;
+namespace Nwt\CodingStandards\CsFixer\Phpdoc;
 
 use Nette\Utils\Strings;
 use PhpCsFixer\DocBlock\DocBlock;
@@ -12,7 +12,7 @@ use PhpCsFixer\Tokenizer\Analyzer\FunctionsAnalyzer;
 use PhpCsFixer\Tokenizer\Token;
 use PhpCsFixer\Tokenizer\Tokens;
 use PhpCsFixer\WhitespacesFixerConfig;
-use Shopsys\CodingStandards\Helper\PhpToDocTypeTransformer;
+use Nwt\CodingStandards\Helper\PhpToDocTypeTransformer;
 use SplFileInfo;
 use Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\IndentDetector;
 
@@ -42,14 +42,14 @@ abstract class AbstractMissingAnnotationsFixer implements FixerInterface, Define
     private $indentDetector;
 
     /**
-     * @var \Shopsys\CodingStandards\Helper\PhpToDocTypeTransformer
+     * @var \Nwt\CodingStandards\Helper\PhpToDocTypeTransformer
      */
     protected $phpToDocTypeTransformer;
 
     /**
      * @param \PhpCsFixer\WhitespacesFixerConfig $whitespacesFixerConfig
      * @param \PhpCsFixer\Tokenizer\Analyzer\FunctionsAnalyzer $functionsAnalyzer
-     * @param \Shopsys\CodingStandards\Helper\PhpToDocTypeTransformer $phpToDocTypeTransformer
+     * @param \Nwt\CodingStandards\Helper\PhpToDocTypeTransformer $phpToDocTypeTransformer
      * @param \Symplify\CodingStandard\TokenRunner\Analyzer\FixerAnalyzer\IndentDetector $indentDetector
      */
     public function __construct(

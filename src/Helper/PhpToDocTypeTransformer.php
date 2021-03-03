@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\Helper;
+namespace Nwt\CodingStandards\Helper;
 
 use Nette\Utils\Strings;
 use PhpCsFixer\Tokenizer\Analyzer\Analysis\TypeAnalysis;
@@ -11,12 +11,12 @@ use PhpCsFixer\Tokenizer\Tokens;
 final class PhpToDocTypeTransformer
 {
     /**
-     * @var \Shopsys\CodingStandards\Helper\FqnNameResolver
+     * @var \Nwt\CodingStandards\Helper\FqnNameResolver
      */
     private $fqnNameResolver;
 
     /**
-     * @param \Shopsys\CodingStandards\Helper\FqnNameResolver $fqnNameResolver
+     * @param \Nwt\CodingStandards\Helper\FqnNameResolver $fqnNameResolver
      */
     public function __construct(FqnNameResolver $fqnNameResolver)
     {

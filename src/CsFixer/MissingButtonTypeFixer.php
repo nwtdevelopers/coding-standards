@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer;
+namespace Nwt\CodingStandards\CsFixer;
 
 use PhpCsFixer\Fixer\DefinedFixerInterface;
 use PhpCsFixer\Fixer\FixerInterface;
@@ -74,7 +74,7 @@ final class MissingButtonTypeFixer implements FixerInterface, DefinedFixerInterf
      */
     public function getName(): string
     {
-        return 'Shopsys/missing_button_type';
+        return 'Nwt/missing_button_type';
     }
 
     /**

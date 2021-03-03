@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\Finder;
+namespace Nwt\CodingStandards\Finder;
 
 use ArrayIterator;
 use IteratorAggregate;

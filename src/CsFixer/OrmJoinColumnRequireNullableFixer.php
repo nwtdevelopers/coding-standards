@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer;
+namespace Nwt\CodingStandards\CsFixer;
 
 use PhpCsFixer\DocBlock\Annotation;
 use PhpCsFixer\DocBlock\DocBlock;
@@ -81,7 +81,7 @@ SAMPLE
      */
     public function getName(): string
     {
-        return 'Shopsys/orm_join_column_require_nullable';
+        return 'Nwt/orm_join_column_require_nullable';
     }
 
     /**

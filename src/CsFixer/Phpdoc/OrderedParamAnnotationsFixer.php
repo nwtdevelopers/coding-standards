@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer\Phpdoc;
+namespace Nwt\CodingStandards\CsFixer\Phpdoc;
 
 use Nette\Utils\Strings;
 use PhpCsFixer\DocBlock\DocBlock;
@@ -15,7 +15,7 @@ use PhpCsFixer\FixerDefinition\FixerDefinitionInterface;
 use PhpCsFixer\Tokenizer\Analyzer\FunctionsAnalyzer;
 use PhpCsFixer\Tokenizer\Token;
 use PhpCsFixer\Tokenizer\Tokens;
-use Shopsys\CodingStandards\Helper\PhpdocRegex;
+use Nwt\CodingStandards\Helper\PhpdocRegex;
 use SplFileInfo;
 
 final class OrderedParamAnnotationsFixer implements FixerInterface, DefinedFixerInterface

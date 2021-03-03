@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer;
+namespace Nwt\CodingStandards\CsFixer;
 
 use PhpCsFixer\Fixer\DefinedFixerInterface;
 use PhpCsFixer\Fixer\FixerInterface;
@@ -57,7 +57,7 @@ final class ForbiddenDumpFixer implements FixerInterface, DefinedFixerInterface
             $tokens->generateCode()
         );
 
-        $tokens->setCode($code);
+        $tokens->setCode((string)$code);
     }
 
     /**
@@ -65,7 +65,7 @@ final class ForbiddenDumpFixer implements FixerInterface, DefinedFixerInterface
      */
     public function getName(): string
     {
-        return 'Shopsys/forbidden_dump';
+        return 'Nwt/forbidden_dump';
     }
 
     /**

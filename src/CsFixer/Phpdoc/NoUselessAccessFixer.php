@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer\Phpdoc;
+namespace Nwt\CodingStandards\CsFixer\Phpdoc;
 
 use PhpCsFixer\DocBlock\DocBlock;
 use PhpCsFixer\Fixer\DefinedFixerInterface;
@@ -205,7 +205,7 @@ class Foo
      */
     public function getName(): string
     {
-        return 'Shopsys/phpdoc_no_useless_access';
+        return 'Nwt/phpdoc_no_useless_access';
     }
 
     /**

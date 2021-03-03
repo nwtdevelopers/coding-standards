@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\Helper;
+namespace Nwt\CodingStandards\Helper;
 
 final class PhpdocRegex
 {

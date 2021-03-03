@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer;
+namespace Nwt\CodingStandards\CsFixer;
 
 use PhpCsFixer\ConfigurationException\InvalidFixerConfigurationException;
 use PhpCsFixer\Fixer\ConfigurableFixerInterface;
@@ -12,7 +12,7 @@ use PhpCsFixer\FixerDefinition\FixerDefinition;
 use PhpCsFixer\FixerDefinition\FixerDefinitionInterface;
 use PhpCsFixer\Tokenizer\Token;
 use PhpCsFixer\Tokenizer\Tokens;
-use Shopsys\CodingStandards\Exception\NamespaceNotFoundException;
+use Nwt\CodingStandards\Exception\NamespaceNotFoundException;
 use SplFileInfo;
 
 final class ForbiddenPrivateVisibilityFixer implements DefinedFixerInterface, ConfigurableFixerInterface
@@ -113,7 +113,7 @@ private function method()
 
     /**
      * @param \PhpCsFixer\Tokenizer\Tokens $tokens
-     * @throws \Shopsys\CodingStandards\Exception\NamespaceNotFoundException
+     * @throws \Nwt\CodingStandards\Exception\NamespaceNotFoundException
      * @return string
      */
     private function getNamespace(Tokens $tokens): string
@@ -165,7 +165,7 @@ private function method()
      */
     public function getName(): string
     {
-        return 'Shopsys/forbidden_private_visibility';
+        return 'Nwt/forbidden_private_visibility';
     }
 
     /**

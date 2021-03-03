@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shopsys\CodingStandards\CsFixer;
+namespace Nwt\CodingStandards\CsFixer;
 
 use PhpCsFixer\Fixer\DefinedFixerInterface;
 use PhpCsFixer\Fixer\FixerInterface;
@@ -71,7 +71,7 @@ final class RedundantMarkDownTrailingSpacesFixer implements FixerInterface, Defi
      */
     public function getName(): string
     {
-        return 'Shopsys/redundant_spaces_md';
+        return 'Nwt/redundant_spaces_md';
     }
 
     /**
